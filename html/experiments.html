@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Experiments </title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Bernie Shan">
+        <style>
+            td,th {
+                border: 2px solid #dddddd;
+            }
+        </style>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    </head>
+<body>
+    <a href="../index.html"><img src="../images/favicon.ico" alt="Logo for the website"></a>
+    <nav>
+        <a href="../index.html">Home</a> |
+        <a href="../index.html#about">About</a> |
+        <a href="../index.html#experience">Experience</a> |
+        <a href="../index.html#projects">Projects</a> |
+        <a href="../index.html#testimonials">Testimonials</a> |
+        <a href="../index.html#contact">Contact</a> |
+        <a href="#">Resume</a>
+    </nav>
+    <header>
+        <h1>Experiments</h1>
+        <p>This is where all the random tags that did not work in the main page are being experimented with.</p>
+    </header>
+<main>
+    <section>
+    <h2>A Weird Red Box</h2>
+    <canvas id="redBox" width="200" height="100">Your browser does not support the canvas element.</canvas>
+    <script>
+        var canvas = document.getElementById("redBox");
+        var obj = canvas.getContext("2d");
+        obj.fillStyle = "#FF0000";
+        obj.fillRect(0,0,200,100);
+    </script>
+    </section>
+
+    <hr>
+
+    <section>
+    <h2>Pre-formatted text and aside</h2>
+    <pre>Putting   3    Spaces   Between   Words   Is    Dumb</pre>
+    <aside>This is apparently an aside, but I don't see any differences...</aside>
+    </section>
+
+    <hr>
+    <section>
+        <h2>Special Formatting</h2>
+        <p>Wow I can put<br>Line Breaks, <b>bold text</b>, and <i>italicized text</i> in <br><em>My Paragraph!</em></p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Code Time!</h2>
+        <p>I like using the <code>&lt;code&gt;</code> tag to display code snippets on my website!</p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Browser Resizing!</h2>
+        <p>Resize your browser to see different photos!</p>
+        <picture>
+            <source media="(min-width:1000px)" srcset="../images/big_photo.jpeg">
+            <source media="(min-width:800px)" srcset="../images/medium_photo.jpeg">
+            <img src="../images/small_photo.jpeg">
+        </picture>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Check out these sounds and videos!</h2>
+        <audio controls>
+            <source src="../media/stadium.mp3" type="audio/mpeg">Your browser does not support the audio element.
+        </audio><br>
+        <video width="320" height="240" controls>
+            <source src="../media/rickroll.mp4" type="video/mp4">
+            Aw.. your browser doesn't support this video :(
+        </video>
+        <p>If you didn't like that video, here's a circle <svg width="100" height="100"><circle cx="50" cy="50" r="30" stroke="black" fill="red"/></svg>:)</p>
+    </section>
+
+    <hr>
+
+    <section>
+        <template>
+            <h2>You can't see this lol</h2>
+        </template>
+        <button type="button" onclick="window.location.href='https://youtu.be/dQw4w9WgXcQ';">Don't click</button>
+    </section>
+</main>
+
+<hr>
+
+    <footer>
+        <p>Author: Bernie Shan</p>
+    </footer>
+</body>
+
+</html>
