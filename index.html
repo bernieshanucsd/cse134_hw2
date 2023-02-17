@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <title> Bernie Shan </title>
-
+        <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <meta name="author" content="Bernie Shan">
         <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     </head>
 <body>
-    <a href="index.html"><img src="./images/favicon.ico" alt="Logo for the website"></a>
-    <nav>
+    <nav id="nav_bar">
+        <a href="index.html"><img src="./images/favicon.ico" alt="Logo for the website"></a>
         <a href="html/experiments.html">Experiments</a> |
         <a href="#about">About</a> |
         <a href="#experience">Experience</a> |
@@ -18,8 +18,9 @@
         <a href="#contact">Contact</a> |
         <a href="#">Resume</a>
     </nav>
+
     <header>
-        <h1>Hello! My Name is <span style="color:DodgerBlue">Bernie Shan</span>!</h1>
+        <h1>Hello! My Name is <strong>Bernie Shan</strong>!</h1>
         <p>I'm a 4th year undergraduate at UC San Diego studying Computer Science and Engineering. My interests are in Artificial Intelligence and Machine Learning.</p>
     </header>
 <main>
@@ -47,7 +48,7 @@
             <table>
                 <caption>Companies I've Worked At</caption>
                 <colgroup>
-                    <col span="3" style="background-color:LightGray">
+                    <col span="3">
                 </colgroup>
                 <tr>
                     <th>Company</th>
@@ -75,9 +76,9 @@
         <h3>Project 1</h3>
         <figure>
             <img src="./images/cs_project.jpg" alt="CS Project" width="400" height="200">
-            <figcaption>CS Project Image Placeholder</figcaption>
+            <figcaption>CSE134B Website Design</figcaption>
         </figure>
-        <p>Check out this cool CS project below!</p>
+        <p>Check out this CS webdev project below!</p>
         <iframe src="https://fancy-cheesecake-59fa32.netlify.app/" title="My CSE134B HW1" height="400" width="800">
         </iframe>
     </section>
@@ -86,10 +87,21 @@
 
     <section>
         <h2 id="testimonials">Testimonials</h2>
-        <h3>Person 1</h3>
+        <h3>Jane Doe</h3>
         <details>
-            <summary><strong>Click to view more..</strong></summary>
-            <p>Bernie is a great individual that works well with other people. Bernie put full effort into all of his work and it is reflected by the work he produces.</p>
+            <summary><strong>Click to view testimonial</strong></summary>
+            <picture>
+                <img id="janedoeimg" width="100px" height="100px" src="./images/janedoe.jpeg" alt="Jane Doe">
+            </picture>
+            <p class="quote">"Bernie is a great individual that works well with other people. Bernie put full effort into all of his work and it is reflected by the work he produces."</p>
+        </details>
+        <h3>James Smith</h3>
+        <details>
+            <summary><strong>Click to view testimonial</strong></summary>
+            <picture>
+                <img id="jamesmithimg" width="100px" height="100px" src="./images/jamesmith.jpeg" alt="James Smith">
+            </picture>
+            <p class="quote">"I worked with Bernie on a group project for CSE 110 He worked well with the group and resolved conflicts easily. This resulted in our group producing a high qualify project for the class."</p>
         </details>
     </section>
 
@@ -97,7 +109,7 @@
 
     <section>
         <h2 id="contact">Get In Touch!</h2>
-        <h3>Contact Form</h3>
+        <h3 >Contact Form</h3>
         <form>
             <fieldset>
                 <legend>Form:</legend>

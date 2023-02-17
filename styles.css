@@ -1,0 +1,97 @@
+ul, ol {
+    text-align: center;
+    list-style-position: inside;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    margin: 150px;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    text-align: center;
+}
+
+
+body {
+    background-color: #0a192f;
+    color: lightgray;
+}
+
+main {
+    text-align: center;
+}
+
+#nav_bar {
+    display: flex;
+    grid-gap: 5px;
+    padding: 20px;
+    align-items: center;
+}
+
+#nav_bar a:first-child {
+  margin-right: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+#janedoeimg {
+    border-radius: 50%;
+}
+
+#jamesmithimg {
+    border-radius: 50%;
+}
+
+.quote {
+    font-family: Apple Chancery, cursive, Luminari, fantasy, sans-serif;
+}
+
+nav a {
+    color: aquamarine;
+}
+
+details {
+  padding: 10px;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes close {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+details[open] summary ~ * {
+  animation: open .25s;
+}
+
+details.closing summary ~ * {
+  animation: close .25s;
+}
