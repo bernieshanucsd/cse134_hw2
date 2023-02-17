@@ -89,9 +89,9 @@ details {
 }
 
 details[open] summary ~ * {
-  animation: open .25s;
+  animation: open 1s;
 }
 
 details.closing summary ~ * {
-  animation: close .25s;
+  animation: close 1s;
 }
